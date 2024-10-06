@@ -1,8 +1,7 @@
 import React from 'react'
-import Container from '../Component/Container/Container';
 import 'typeface-poppins';
 import TypingAnimator from 'react-typing-animator'
-import bhavesh from '../assets/profile.jpeg'
+import bhavesh from '../assets/Profile.jpeg'
 import Skill from './Skill';
 function Home() {
     return (
