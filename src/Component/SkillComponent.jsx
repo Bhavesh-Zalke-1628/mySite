@@ -1,4 +1,4 @@
-import { Css3OriginalWordmark, ExpressOriginal, GithubOriginal, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginalWordmark, PostmanOriginal, ReactOriginal, ReduxOriginal } from 'devicons-react';
+import { Css3Original, Css3OriginalWordmark, ExpressOriginal, ExpressOriginalWordmark, GithubOriginal, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginal, NodejsOriginalWordmark, PostmanOriginal, ReactOriginal, ReduxOriginal } from 'devicons-react';
 import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react'
 
@@ -13,13 +13,14 @@ function SkillComponent() {
             z: (index) => (index % 2 === 0 ? -100 : 100), // Different y position for each icon
             opacity: 0,
             duration: 2,
-            stagger: 0.3, // Delay between each icon's animation
+            stagger: 0.1, // Delay between each icon's animation
             ease: "power3.out", // Smooth easing
+
         });
     }, []);
 
     return (
-        <div className="flex space-x-4 w-full h-full justify-center">
+        <div className="flex space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
             {/* Reference the icons in an array */}
             <div
                 ref={(el) => (iconsRef.current[0] = el)}>
@@ -27,7 +28,7 @@ function SkillComponent() {
             </div>
             <div
                 ref={(el) => (iconsRef.current[1] = el)}>
-                <Css3OriginalWordmark size={72} />
+                <Css3Original size={72} />
             </div>
             <div
                 ref={(el) => (iconsRef.current[2] = el)}>
@@ -41,7 +42,7 @@ function SkillComponent() {
 
             <div
                 ref={(el) => (iconsRef.current[4] = el)}>
-                <NodejsOriginalWordmark size={72} />
+                <NodejsOriginal size={72} />
             </div>
 
 
