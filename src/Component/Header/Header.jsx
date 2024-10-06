@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
 import Container from "../Container/Container"
-import bhavesh from '../../assets/profile.jpeg'
+import bhavesh from '../../assets/Profile.jpeg'
 import { Menu, X } from 'lucide-react'
 import { useState } from "react"
 function Header() {
