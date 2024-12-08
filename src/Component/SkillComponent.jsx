@@ -1,5 +1,6 @@
-import { Css3Original, Css3OriginalWordmark, ExpressOriginal, ExpressOriginalWordmark, GithubOriginal, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginal, NodejsOriginalWordmark, PostmanOriginal, ReactOriginal, ReduxOriginal } from 'devicons-react';
+import { Css3Original, Css3OriginalWordmark, ExpressOriginal, ExpressOriginalWordmark, GithubOriginal, Html5Original, JavascriptOriginal, LinkedinOriginal, MongodbOriginal, NodejsOriginal, NodejsOriginalWordmark, PostmanOriginal, ReactOriginal, ReduxOriginal, TerraformPlainWordmark } from 'devicons-react';
 import gsap from 'gsap';
+import { Linkedin } from 'lucide-react';
 import React, { useEffect, useRef } from 'react'
 
 function SkillComponent() {
@@ -66,6 +67,10 @@ function SkillComponent() {
             <div
                 ref={(el) => (iconsRef.current[9] = el)}>
                 <GithubOriginal size={72} />
+            </div>
+            <div
+                ref={(el) => (iconsRef.current[10] = el)}>
+                <LinkedinOriginal size={72} />
             </div>
         </div>
     );

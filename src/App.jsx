@@ -6,7 +6,7 @@ import 'devicon/devicon.min.css';
 function App() {
 
   return (
-    <div className=' min-h-screen flex flex-wrap justify-between bg-gray-400'>
+    <div className=' min-h-screen flex flex-wrap justify-between'>
       <div className=' w-full block'>
         <Header />
         <main>
