@@ -2,6 +2,7 @@ import React from 'react'
 import { ThreeDCardDemo } from '../Component/ThreeDCard'
 import projectImg1 from '../assets/image1.png'
 import projectImg2 from '../assets/image2.png'
+import { useNavigate } from 'react-router-dom'
 
 const project = [
     {
@@ -25,11 +26,22 @@ const project = [
 ]
 
 const Project = () => {
+
+    const navigate = useNavigate()
     return (
-        <div className=' bg-black w-full h-ful min-h-screen'>
-            <h1
-                className=' text-3xl text-white text-center px-5'
-            >My project</h1>
+        <div className=' bg-black w-full h-full min-h-screen'>
+            <div className=' flex items-center justify-center'>
+                <h1 className=' text-2xl mt-4 cursor-pointer'
+                    onClick={() => navigate(-1)}
+                >
+                    ⬅️ Back
+                </h1>
+                <h1
+                    className=' text-3xl mt-4 text-white px-5'
+                >
+                    My project
+                </h1>
+            </div>
             <div className=' flex items-center justify-center gap-2 flex-wrap'>
                 {
                     project.map((pr, index) => {

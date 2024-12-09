@@ -13,7 +13,7 @@ export function ThreeDCardDemo({ pr }) {
                 <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
                     {pr.description}
                 </CardItem>
-                <CardItem translateZ="100" className="w-full mt-4">
+                <CardItem translateZ="100" className="w-full">
                     <img
                         src={pr.img}
                         height="1000"
@@ -22,7 +22,7 @@ export function ThreeDCardDemo({ pr }) {
                         alt="thumbnail"
                     />
                 </CardItem>
-                <div className="flex justify-center items-center mt-20">
+                <div className="flex justify-center items-center mt-5">
 
                     <Link
                         to={pr.link}
