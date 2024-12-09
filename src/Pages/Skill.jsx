@@ -20,7 +20,7 @@ const Skill = () => {
                             <SkillComponent />
                         </div>
                     ) : (
-                        <div className='text-xl text-wrap text-white w-[70vw] capitalize mt-2 transition ease-in-out duration-300 opacity-75'>
+                        <div className='text-xl text-wrap w-[70vw] capitalize mt-2 transition ease-in-out duration-300 opacity-75'>
                             "Harnessing the power of the <span className='  bg-gradient-to-r font-bold from-yellow-700 to-pink-800 text-transparent bg-clip-text'>MERN </span>  stack, I transform ideas into dynamic, scalable web applications that elevate user experiences and drive innovation."
                         </div>
                     )

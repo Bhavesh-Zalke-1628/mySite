@@ -21,7 +21,7 @@ function SkillComponent() {
     }, []);
 
     return (
-        <div className="flex space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
+        <div className="flex flex-wrap space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
             {/* Reference the icons in an array */}
             <div
                 ref={(el) => (iconsRef.current[0] = el)}>
@@ -44,12 +44,6 @@ function SkillComponent() {
             <div
                 ref={(el) => (iconsRef.current[4] = el)}>
                 <NodejsOriginal size={72} />
-            </div>
-
-
-            <div
-                ref={(el) => (iconsRef.current[5] = el)}>
-                <ExpressOriginal size={72} />
             </div>
             <div
                 ref={(el) => (iconsRef.current[6] = el)}>

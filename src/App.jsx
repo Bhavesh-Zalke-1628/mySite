@@ -1,16 +1,16 @@
 
 import Header from './Component/Header/Header'
 import Footer from './Component/Footer/Footer'
-import { Outlet } from 'react-router-dom'
-import 'devicon/devicon.min.css';
+import Home from './Pages/Home';
+import { Card } from './Component/Card';
 function App() {
-
   return (
-    <div className=' min-h-screen flex flex-wrap justify-between'>
-      <div className=' w-full block'>
+    <div className=' min-h-screen flex flex-wrap justify-between bg-black'>
+      <div className=' w-full heblock'>
         <Header />
         <main>
-          <Outlet />
+          <Home />
+          <Card />
         </main>
         <Footer />
       </div>
