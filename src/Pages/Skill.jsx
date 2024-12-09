@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SkillComponent from '../Component/SkillComponent';
+import { ThreeDCardDemo } from './Project';
 
 const Skill = () => {
     const [enable, setEnable] = useState(false);
@@ -26,9 +27,7 @@ const Skill = () => {
                     )
                 }
             </div>
-            <h1 className="font-customCursive text-5xl">
-                About
-            </h1>
+
         </>
     );
 };

@@ -17,7 +17,8 @@ function Header() {
             // slug: '/login',
         },
         {
-            name: 'Project'
+            name: 'Project',
+            slug: '/project'
         }
     ]
     return (
@@ -29,11 +30,15 @@ function Header() {
             <ul className="hidden  lg:flex  ml-14 space-x-10">
                 {navItems.map((el, index) => {
                     return (
-                        <li
-                            className=" text-xl"
-                            key={index}>
-                            {el.name}
-                        </li>
+                        <Link
+                            to={el.slug}
+                        >
+                            <li
+                                className=" text-xl"
+                                key={index}>
+                                {el.name}
+                            </li>
+                        </Link>
                     );
                 })}
             </ul>
