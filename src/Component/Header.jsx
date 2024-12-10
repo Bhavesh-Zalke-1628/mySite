@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-import bhavesh from "../../assets/Profile.jpeg";
+import bhavesh from "../assets/Profile.jpeg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
-function Header() {
+function Navbar() {
     const navigate = useNavigate();
     const [mobileDrawer, setMobileDrawer] = useState(false);
 
@@ -20,6 +20,10 @@ function Header() {
             name: "Project",
             slug: "/project",
         },
+        {
+            name: "Contact",
+            slug: '/contact'
+        }
     ];
 
     return (
@@ -69,4 +73,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Navbar;

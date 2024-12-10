@@ -2,8 +2,6 @@ import React from "react";
 import "typeface-poppins";
 import bhavesh from "../assets/Profile.jpeg";
 import { FlipWords } from "../components/ui/flip-words";
-import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
-import Skill from "../Component/SkillComponent";
 
 function Home() {
     return (
@@ -13,10 +11,11 @@ function Home() {
                 {/* Text Section */}
                 <div className="text-center lg:text-left">
                     <FlipWords
-                        className="text-2xl mb-5 lg:ml-0"
+                        className="text-2xl mb-5 lg:ml-0 text-white"
                         duration={2000}
                         words={["Web Developer", "Software Developer"]}
                     />
+
                     <h1 className="text-4xl sm:text-6xl lg:text-7xl tracking-wide">
                         <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
                             Bhavesh Zalke
@@ -36,10 +35,6 @@ function Home() {
                     />
                 </div>
             </div>
-
-            {/* Skills Section */}
-            <h1 className="text-4xl mt-10 mb-6">Skills</h1>
-            <Skill />
         </div>
     );
 }

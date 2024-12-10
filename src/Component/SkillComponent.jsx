@@ -1,6 +1,5 @@
-import { Css3Original, Css3OriginalWordmark, ExpressOriginal, ExpressOriginalWordmark, GithubOriginal, Html5Original, JavascriptOriginal, LinkedinOriginal, MongodbOriginal, NodejsOriginal, NodejsOriginalWordmark, PostmanOriginal, ReactOriginal, ReduxOriginal, TerraformPlainWordmark } from 'devicons-react';
+import { Css3Original, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginal, PostmanOriginal, ReactOriginal, ReduxOriginal, NextjsOriginal } from 'devicons-react';
 import gsap from 'gsap';
-import { Linkedin } from 'lucide-react';
 import React, { useEffect, useRef } from 'react'
 
 function SkillComponent() {
@@ -21,52 +20,51 @@ function SkillComponent() {
     }, []);
 
     return (
-        <div className="flex flex-wrap space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
-            {/* Reference the icons in an array */}
-            <div
-                ref={(el) => (iconsRef.current[0] = el)}>
-                <Html5Original size={72} className=' rounded-full' />
-            </div>
-            <div
-                ref={(el) => (iconsRef.current[1] = el)}>
-                <Css3Original size={72} />
-            </div>
-            <div
-                ref={(el) => (iconsRef.current[2] = el)}>
-                <JavascriptOriginal size={72} className=' rounded-full' />
-            </div>
+        <>
+            <h1 className="text-4xl mt-20 mb-6 text-white text-center">Skills</h1>
+            <div className="flex flex-wrap space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
 
-            <div
-                ref={(el) => (iconsRef.current[3] = el)}>
-                <ReactOriginal size={72} />
-            </div>
+                {/* Reference the icons in an array */}
+                <div
+                    ref={(el) => (iconsRef.current[0] = el)}>
+                    <Html5Original size={72} className=' rounded-full' />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[1] = el)}>
+                    <Css3Original size={72} />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[2] = el)}>
+                    <JavascriptOriginal size={72} className=' rounded-full' />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[9] = el)}>
+                    <NextjsOriginal size={72} />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[3] = el)}>
+                    <ReactOriginal size={72} />
+                </div>
 
-            <div
-                ref={(el) => (iconsRef.current[4] = el)}>
-                <NodejsOriginal size={72} />
+                <div
+                    ref={(el) => (iconsRef.current[4] = el)}>
+                    <NodejsOriginal size={72} />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[6] = el)}>
+                    <MongodbOriginal size={72} />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[8] = el)}>
+                    <ReduxOriginal size={72} />
+                </div>
+                <div
+                    ref={(el) => (iconsRef.current[7] = el)}>
+                    <PostmanOriginal size={72} />
+                </div>
             </div>
-            <div
-                ref={(el) => (iconsRef.current[6] = el)}>
-                <MongodbOriginal size={72} />
-            </div>
-            <div
-                ref={(el) => (iconsRef.current[7] = el)}>
-                <PostmanOriginal size={72} />
-            </div>
+        </>
 
-            <div
-                ref={(el) => (iconsRef.current[8] = el)}>
-                <ReduxOriginal size={72} />
-            </div>
-            <div
-                ref={(el) => (iconsRef.current[9] = el)}>
-                <GithubOriginal size={72} />
-            </div>
-            <div
-                ref={(el) => (iconsRef.current[10] = el)}>
-                <LinkedinOriginal size={72} />
-            </div>
-        </div>
     );
 }
 
