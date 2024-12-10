@@ -3,7 +3,10 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 export function Card() {
     return (
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-5xl mx-auto px-8 flex items-center justify-center flex-col">
+            <h1
+                className=" text-white mt-4 text-4xl"
+            >Project</h1>
             <HoverEffect items={projects} />
         </div>
     );
