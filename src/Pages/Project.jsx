@@ -30,7 +30,7 @@ const project = [
     {
         title: "Pokedex",
         description:
-            "Unleash the power of React and REST APIs to craft a dynamic Pokédex – a seamless blend of design, data, and discovery! This highlights the core technologies(React and REST API) and emphasizes the interactive and exploratory nature of a Pokédex.",
+            "Unleash the power of React and REST APIs to craft a dynamic Pokédex – a seamless blend of design, data, and discovery! ",
         link: "https://pokedex-two-sooty.vercel.app",
         img: PockImg,
     },
