@@ -27,4 +27,9 @@ export const projects = [
         description: "An e-commerce demo showcasing product listings, search, cart functionality, and secure checkout for a seamless online shopping experience.",
         link: "https://ecom-six-neon.vercel.app",
     },
+    {
+        title: "Pokedex",
+        description: "Unleash the power of React and REST APIs to craft a dynamic Pokédex – a seamless blend of design, data, and discovery! ",
+        link: "https://pokedex-two-sooty.vercel.app"
+    },
 ];
