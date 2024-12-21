@@ -3,6 +3,8 @@ import { ThreeDCardDemo } from "../Component/ThreeDCard";
 import projectImg1 from "../assets/image1.png";
 import projectImg2 from "../assets/image2.png";
 import { useNavigate } from "react-router-dom";
+import PockImg from "../assets/PockImg.png";
+
 
 const project = [
     {
@@ -24,6 +26,13 @@ const project = [
             "An e-commerce demo showcasing product listings, search, cart functionality, and secure checkout for a seamless online shopping experience.",
         link: "https://ecom-six-neon.vercel.app",
         img: projectImg2,
+    },
+    {
+        title: "Pokedex",
+        description:
+            "Unleash the power of React and REST APIs to craft a dynamic Pokédex – a seamless blend of design, data, and discovery! This highlights the core technologies(React and REST API) and emphasizes the interactive and exploratory nature of a Pokédex.",
+        link: "https://pokedex-two-sooty.vercel.app",
+        img: PockImg,
     },
 ];
 

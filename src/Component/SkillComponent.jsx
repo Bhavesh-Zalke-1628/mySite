@@ -1,4 +1,4 @@
-import { Css3Original, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginal, PostmanOriginal, ReactOriginal, ReduxOriginal, NextjsOriginal } from 'devicons-react';
+import { Css3Original, Html5Original, JavascriptOriginal, MongodbOriginal, NodejsOriginal, PostmanOriginal, ReactOriginal, ReduxOriginal, NextjsOriginal, MysqlOriginal } from 'devicons-react';
 import gsap from 'gsap';
 import React, { useEffect, useRef } from 'react'
 
@@ -21,7 +21,7 @@ function SkillComponent() {
 
     return (
         <>
-            <h1 className="text-4xl mt-20 mb-6 text-white text-center">Skills</h1>
+            <h1 className=" text-4xl mt-20 mb-6 text-white text-center">Skills</h1>
             <div className="flex flex-wrap space-x-4 w-full h-full mt-4 justify-center transform ease-in-out duration-300">
 
                 {/* Reference the icons in an array */}
@@ -53,13 +53,16 @@ function SkillComponent() {
                 <div
                     ref={(el) => (iconsRef.current[6] = el)}>
                     <MongodbOriginal size={72} />
+                </div><div
+                    ref={(el) => (iconsRef.current[7] = el)}>
+                    <MysqlOriginal size={72} />
                 </div>
                 <div
                     ref={(el) => (iconsRef.current[8] = el)}>
                     <ReduxOriginal size={72} />
                 </div>
                 <div
-                    ref={(el) => (iconsRef.current[7] = el)}>
+                    ref={(el) => (iconsRef.current[9] = el)}>
                     <PostmanOriginal size={72} />
                 </div>
             </div>
