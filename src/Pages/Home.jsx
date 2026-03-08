@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import bhavesh from "../assets/Profile.jpeg";
 import { FlipWords } from "../components/ui/flip-words";
+import Magnetic from "../Component/Magnetic";
 
 function Home() {
   return (
@@ -79,18 +80,22 @@ function Home() {
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-            <a
-              href="#projects"
-              className="px-8 py-4 rounded-full bg-[var(--text-primary)] text-[var(--bg-primary)] font-bold hover:opacity-90 transition-all transform hover:scale-105 shadow-xl shadow-black/5 dark:shadow-white/5"
-            >
-              View Projects
-            </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 rounded-full border border-[var(--glass-border)] glass-card text-[var(--text-primary)] font-bold hover:bg-[var(--glass-bg)] transition-all transform hover:scale-105"
-            >
-              Let's Connect
-            </a>
+            <Magnetic>
+              <a
+                href="#projects"
+                className="px-8 py-4 rounded-full bg-[var(--text-primary)] text-[var(--bg-primary)] font-bold hover:opacity-90 transition-all transform hover:scale-105 shadow-xl shadow-black/5 dark:shadow-white/5"
+              >
+                View Projects
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a
+                href="#contact"
+                className="px-8 py-4 rounded-full border border-[var(--glass-border)] glass-card text-[var(--text-primary)] font-bold hover:bg-[var(--glass-bg)] transition-all transform hover:scale-105"
+              >
+                Let's Connect
+              </a>
+            </Magnetic>
           </div>
         </motion.div>
 

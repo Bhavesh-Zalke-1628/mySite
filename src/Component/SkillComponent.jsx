@@ -9,6 +9,7 @@ import {
   ReduxOriginal,
   TailwindcssOriginal,
   ExpressOriginal,
+  JavaOriginal,
 } from "devicons-react";
 
 function SkillComponent() {
@@ -48,13 +49,21 @@ function SkillComponent() {
       link: "#",
       icon: <JavascriptOriginal size={40} />,
     },
+
     {
-      title: "Full-Stack Integration",
+      title: "Java - (Spring Boot)",
       description:
-        "Connecting frontend and backend seamlessly using best practices in security and authentication (JWT, OAuth).",
+        "Building robust, enterprise-grade backend services with Java and Spring Boot. Skilled in developing REST APIs, microservices, and secure database integrations.",
       link: "#",
-      icon: <NextjsOriginal size={40} />,
+      icon: <JavaOriginal size={40} />,
     },
+    // {
+    //   title: "Full-Stack Integration",
+    //   description:
+    //     "Connecting frontend and backend seamlessly using best practices in security and authentication (JWT, OAuth).",
+    //   link: "#",
+    //   icon: <NextjsOriginal size={40} />,
+    // },
   ];
 
   return (

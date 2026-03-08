@@ -12,6 +12,7 @@ import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/lable";
 import { cn } from "../utils/cn";
 import { Textarea } from "../components/ui/textArea";
+import Magnetic from "../Component/Magnetic";
 
 export function Contact() {
   const handleSubmit = (event) => {
@@ -64,7 +65,7 @@ export function Contact() {
                     Email
                   </p>
                   <p className="text-[var(--text-primary)] font-medium">
-                    bhaveshzalke.dev@gmail.com
+                    zalkebhavesh@gmail.com
                   </p>
                 </div>
               </div>
@@ -89,18 +90,24 @@ export function Contact() {
                 Connect with me
               </h4>
               <div className="flex gap-4">
-                <SocialIcon
-                  icon={IconBrandGithub}
-                  href="https://github.com/Bhavesh-Zalke-1628"
-                />
-                <SocialIcon
-                  icon={IconBrandLinkedin}
-                  href="https://www.linkedin.com/in/bhavesh-zalke-1b2646255/"
-                />
-                <SocialIcon
-                  icon={IconBrandInstagram}
-                  href="https://www.instagram.com/bhaveshzalke_1628/"
-                />
+                <Magnetic>
+                  <SocialIcon
+                    icon={IconBrandGithub}
+                    href="https://github.com/Bhavesh-Zalke-1628"
+                  />
+                </Magnetic>
+                <Magnetic>
+                  <SocialIcon
+                    icon={IconBrandLinkedin}
+                    href="https://www.linkedin.com/in/bhavesh-zalke-1b2646255/"
+                  />
+                </Magnetic>
+                <Magnetic>
+                  <SocialIcon
+                    icon={IconBrandInstagram}
+                    href="https://www.instagram.com/bhaveshzalke_1628/"
+                  />
+                </Magnetic>
               </div>
             </div>
           </motion.div>
@@ -120,7 +127,7 @@ export function Contact() {
                     htmlFor="firstname"
                     className="text-[var(--text-secondary)] mb-1.5 ml-1"
                   >
-                    First Name
+                    First Name *
                   </Label>
                   <Input
                     id="firstname"
@@ -134,7 +141,7 @@ export function Contact() {
                     htmlFor="lastname"
                     className="text-[var(--text-secondary)] mb-1.5 ml-1"
                   >
-                    Last Name
+                    Last Name *
                   </Label>
                   <Input
                     id="lastname"
@@ -150,7 +157,7 @@ export function Contact() {
                   htmlFor="email"
                   className="text-[var(--text-secondary)] mb-1.5 ml-1"
                 >
-                  Email Address
+                  Email Address *
                 </Label>
                 <Input
                   id="email"
