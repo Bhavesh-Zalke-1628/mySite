@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Magnetic from "../Component/Magnetic";
 
 function About() {
   const stats = [
@@ -48,31 +49,32 @@ function About() {
             {/* Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 text-[var(--text-primary)]">
               {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
-                  viewport={{ once: true }}
-                  className="text-center lg:text-left"
-                >
-                  <motion.h3
-                    initial={{ scale: 0.5 }}
-                    whileInView={{ scale: 1 }}
-                    transition={{
-                      type: "spring",
-                      stiffness: 100,
-                      delay: index * 0.1 + 0.8,
-                    }}
+                <Magnetic key={index}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 + 0.5 }}
                     viewport={{ once: true }}
-                    className="text-3xl font-bold mb-1"
+                    className="text-center lg:text-left p-4 rounded-2xl hover:bg-[var(--text-primary)]/[0.03] transition-colors cursor-default"
                   >
-                    {stat.value}
-                  </motion.h3>
-                  <p className="text-[var(--text-secondary)] text-sm font-medium uppercase tracking-wider">
-                    {stat.label}
-                  </p>
-                </motion.div>
+                    <motion.h3
+                      initial={{ scale: 0.5 }}
+                      whileInView={{ scale: 1 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 100,
+                        delay: index * 0.1 + 0.8,
+                      }}
+                      viewport={{ once: true }}
+                      className="text-3xl font-bold mb-1"
+                    >
+                      {stat.value}
+                    </motion.h3>
+                    <p className="text-[var(--text-secondary)] text-sm font-medium uppercase tracking-wider">
+                      {stat.label}
+                    </p>
+                  </motion.div>
+                </Magnetic>
               ))}
             </div>
           </motion.div>
@@ -85,36 +87,42 @@ function About() {
             viewport={{ once: true }}
             className="flex-1 relative hidden lg:block"
           >
-            <div className="w-[400px] h-[400px] glass-card rounded-2xl p-8 relative overflow-hidden group">
+            <div className="w-[400px] h-full glass-card rounded-2xl p-8 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-3xl group-hover:bg-cyan-500/40 transition-all duration-700"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-violet-500/10 dark:bg-violet-500/20 rounded-full blur-3xl group-hover:bg-violet-500/40 transition-all duration-700"></div>
 
               <div className="relative z-10 space-y-6">
-                <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-cyan-500/50 transition-colors">
-                  <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
-                    Strategy Driven
-                  </h4>
-                  <p className="text-[var(--text-secondary)] text-sm">
-                    Every project starts with a deep dive into user needs and
-                    business goals.
-                  </p>
-                </div>
-                <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-violet-500/50 transition-colors">
-                  <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
-                    Performance First
-                  </h4>
-                  <p className="text-[var(--text-secondary)] text-sm">
-                    Lightweight, fast-loading, and SEO-optimized by default.
-                  </p>
-                </div>
-                <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-cyan-500/50 transition-colors">
-                  <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
-                    Future-Proof
-                  </h4>
-                  <p className="text-[var(--text-secondary)] text-sm">
-                    Scalable architecture built to grow with your vision.
-                  </p>
-                </div>
+                <Magnetic>
+                  <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-cyan-500/50 transition-colors cursor-default">
+                    <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
+                      Strategy Driven
+                    </h4>
+                    <p className="text-[var(--text-secondary)] text-sm">
+                      Every project starts with a deep dive into user needs and
+                      business goals.
+                    </p>
+                  </div>
+                </Magnetic>
+                <Magnetic>
+                  <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-violet-500/50 transition-colors cursor-default">
+                    <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
+                      Performance First
+                    </h4>
+                    <p className="text-[var(--text-secondary)] text-sm">
+                      Lightweight, fast-loading, and SEO-optimized by default.
+                    </p>
+                  </div>
+                </Magnetic>
+                <Magnetic>
+                  <div className="p-4 rounded-xl bg-[var(--text-primary)]/5 border border-[var(--glass-border)] hover:border-cyan-500/50 transition-colors cursor-default">
+                    <h4 className="text-[var(--text-primary)] font-bold mb-2 tracking-tight">
+                      Future-Proof
+                    </h4>
+                    <p className="text-[var(--text-secondary)] text-sm">
+                      Scalable architecture built to grow with your vision.
+                    </p>
+                  </div>
+                </Magnetic>
               </div>
             </div>
           </motion.div>

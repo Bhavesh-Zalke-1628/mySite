@@ -35,7 +35,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 relative overflow-hidden">
+    <section id="experience" className="pt-20 pb-10 relative overflow-hidden">
       {/* Background Atmosphere */}
       <div className="absolute top-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-violet-500/5 rounded-full blur-[120px] -z-10"></div>
 
