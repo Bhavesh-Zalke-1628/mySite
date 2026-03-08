@@ -53,8 +53,8 @@ function Home() {
             <span className="text-[var(--text-primary)]">Bhavesh Zalke</span>
           </h2>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight leading-[1.1] text-[var(--text-primary)]">
-            Transforming Ideas Into <br />
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight leading-[1.1] text-[var(--text-primary)]">
+            Transforming Ideas Into{" "}
             <span className="premium-gradient-text">Digital Reality</span>
           </h1>
 

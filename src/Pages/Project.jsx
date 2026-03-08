@@ -36,7 +36,7 @@ const Project = () => {
         viewport={{ once: true }}
         className="text-center mb-20"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--text-primary)]">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[var(--text-primary)]">
           Featured <span className="premium-gradient-text">Projects</span>
         </h2>
         <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg leading-relaxed">

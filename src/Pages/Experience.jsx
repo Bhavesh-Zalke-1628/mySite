@@ -47,7 +47,7 @@ const Experience = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--text-primary)]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-[var(--text-primary)]">
             Professional <span className="premium-gradient-text">Journey</span>
           </h2>
           <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg leading-relaxed">
