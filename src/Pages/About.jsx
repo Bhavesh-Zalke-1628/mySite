@@ -85,9 +85,9 @@ function About() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="flex-1 relative hidden lg:block"
+            className="flex-1 relative w-full flex justify-center lg:block"
           >
-            <div className="w-[400px] h-full glass-card rounded-2xl p-8 relative overflow-hidden group">
+            <div className="w-full max-w-[400px] glass-card rounded-2xl p-6 md:p-8 relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-3xl group-hover:bg-cyan-500/40 transition-all duration-700"></div>
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-violet-500/10 dark:bg-violet-500/20 rounded-full blur-3xl group-hover:bg-violet-500/40 transition-all duration-700"></div>
 
