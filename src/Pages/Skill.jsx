@@ -1,35 +1,34 @@
-import React, { useState } from 'react';
-import SkillComponent from '../Component/SkillComponent';
-import { ThreeDCardDemo } from './Project';
+import React from "react";
+import SkillComponent from "../Component/SkillComponent";
+import { motion } from "framer-motion";
 
 const Skill = () => {
-    const [enable, setEnable] = useState(false);
+  return (
+    <section id="skills" className="py-10 relative overflow-hidden">
+      {/* Background Accent */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/5 rounded-full blur-[120px] -z-10"></div>
 
-    return (
-        <>
-            <div
-                onMouseEnter={() => setEnable(true)}  // Set true on hover
-                onMouseLeave={() => setEnable(false)} // Set false when hover ends
-                className="flex flex-col items-center w-full h-full justify-center cursor-pointer"
-            >
-                <h1 className="font-customCursive text-5xl">
-                    Skill
-                </h1>
-                {
-                    enable ? (
-                        <div className="transition ease-in-out duration-300">
-                            <SkillComponent />
-                        </div>
-                    ) : (
-                        <div className='text-xl text-wrap w-[70vw] capitalize mt-2 transition ease-in-out duration-300 opacity-75'>
-                            "Harnessing the power of the <span className='  bg-gradient-to-r font-bold from-yellow-700 to-pink-800 text-transparent bg-clip-text'>MERN </span>  stack, I transform ideas into dynamic, scalable web applications that elevate user experiences and drive innovation."
-                        </div>
-                    )
-                }
-            </div>
+      <div className="container mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--text-primary)]">
+            Technical <span className="premium-gradient-text">Proficiency</span>
+          </h2>
+          <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg leading-relaxed">
+            Diverse toolkit focused on modern web standards, performance
+            optimization, and scalable architecture.
+          </p>
+        </motion.div>
 
-        </>
-    );
+        <SkillComponent />
+      </div>
+    </section>
+  );
 };
 
 export default Skill;

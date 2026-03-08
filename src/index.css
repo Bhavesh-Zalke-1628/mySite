@@ -1,14 +1,95 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Match Navbar height */
+}
 
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent-cyan: #0891b2;
+  --accent-violet: #7c3aed;
+  --border-color: rgba(15, 23, 42, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(15, 23, 42, 0.12);
+}
 
-body {
-    font-family: 'Poppins', sans-serif;
+.dark {
+  --bg-primary: #030712;
+  --bg-secondary: #0a0a0a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-cyan: #06b6d4;
+  --accent-violet: #8b5cf6;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-secondary)] antialiased transition-colors duration-300 selection:bg-cyan-500/30;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply transition-all duration-300 border shadow-lg shadow-black/5;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-color: var(--glass-border);
+  }
+  
+  .glass-nav {
+    @apply border-b transition-all duration-300;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border-color: var(--glass-border);
+  }
+
+  .premium-gradient-text {
+    @apply bg-gradient-to-r from-cyan-500 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent animate-gradient;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+}
+@media (min-width: 1024px) {
+  .lg\:cursor-none,
+  .lg\:cursor-none a,
+  .lg\:cursor-none button,
+  .lg\:cursor-none input,
+  .lg\:cursor-none textarea,
+  .lg\:cursor-none .group {
+    cursor: none !important;
+  }
 }
